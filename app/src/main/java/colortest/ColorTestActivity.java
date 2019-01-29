@@ -23,8 +23,7 @@ public class ColorTestActivity extends AppCompatActivity {
 
     @Override
     public boolean onTouchEvent(MotionEvent event){
-        setBackGroundColor(Color.RED);
-        return true;//presenter.onTouch(v, event);
+        return presenter.onTouchEvent(event);//presenter.onTouch(v, event);
     }
 
     public void setBackGroundColor(int color){
